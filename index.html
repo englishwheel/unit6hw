@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 6 B2 — Science and Technology</title>
+<style>
+  :root{
+    --bg:#f4f7fb; --card:#fff; --primary:#2563eb; --primary-dark:#1e40af;
+    --ok:#16a34a; --bad:#dc2626; --border:#e2e8f0; --text:#1e293b; --muted:#64748b;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; font-family:"Segoe UI",Roboto,Arial,sans-serif;
+    background:var(--bg); color:var(--text); line-height:1.55;
+  }
+  header{
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+    color:#fff; padding:32px 20px; text-align:center;
+  }
+  header h1{margin:0 0 8px; font-size:1.7rem}
+  header p{margin:0; opacity:.9}
+  main{max-width:950px; margin:0 auto; padding:24px 16px 100px}
+  
+  .card{
+    background:var(--card); border:1px solid var(--border); border-radius:14px;
+    padding:22px 20px; margin-bottom:22px; box-shadow:0 4px 14px rgba(0,0,0,.04);
+  }
+  .card h2{
+    margin:0 0 6px; font-size:1.15rem; color:var(--primary-dark);
+    display:flex; align-items:center; gap:8px;
+  }
+  .card h2 .num{
+    background:var(--primary); color:#fff; width:26px; height:26px;
+    border-radius:50%; display:inline-flex; align-items:center; justify-content:center;
+    font-size:.85rem; flex-shrink:0;
+  }
+  .hint{color:var(--muted); font-size:.9rem; margin:0 0 16px}
+  
+  .q{margin-bottom:22px; padding-bottom:16px; border-bottom:1px dashed #e2e8f0}
+  .q:last-child{border-bottom:none; margin-bottom:0; padding-bottom:0}
+  .prompt{margin-bottom:10px; font-size:1.05rem; line-height: 1.7;}
+  .prompt span { display: block; margin-bottom: 6px; }
+  
+  input[type="text"]{
+    font:inherit; padding:8px 12px; border:1px solid var(--border);
+    border-radius:8px; background:#f8fafc; width:150px; margin: 0 5px;
+    text-align: center;
+  }
+  input[type="text"].wide { width: 250px; }
+  input[type="text"]:focus{outline:2px solid #bfdbfe; border-color:var(--primary)}
+  
+  .feedback{font-size:.9rem; margin-top:8px; font-weight:600}
+  .feedback.ok{color:var(--ok)}
+  .feedback.bad{color:var(--bad)}
+  .feedback.ok::before{content:"✔ "}
+  .feedback.bad::before{content:"✘ "}
+  
+  .btn-row{display:flex; flex-wrap:wrap; gap:12px; margin-top:8px}
+  button{
+    font:inherit; font-weight:600; cursor:pointer; border:none; border-radius:10px;
+    padding:12px 22px; transition:.15s;
+  }
+  .btn-primary{background:var(--primary); color:#fff}
+  .btn-primary:hover{background:var(--primary-dark)}
+  .btn-ghost{background:#fff; color:var(--primary-dark); border:1px solid var(--primary)}
+  .btn-ghost:hover{background:#eff6ff}
+  .score{
+    position:fixed; bottom:0; left:0; right:0; z-index:10;
+    background:#1e293b; color:#fff; padding:14px 20px;
+    display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:center;
+    box-shadow:0 -4px 14px rgba(0,0,0,.1);
+  }
+  .score .val{font-size:1.3rem; font-weight:700; margin:0 5px;}
+  .score .val.ok{color:#4ade80}
+  .score .val.bad{color:#f87171}
+  .score .msg{font-size:.95rem; opacity:.9}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Unit 6 — Science and Technology</h1>
+  <p>Phrasal Verbs, Collocations, Word Patterns & Word Formation</p>
+</header>
+
+<main>
+
+  <!-- ================= PHRASAL VERBS ================= -->
+  <section class="card" id="sec-phrasal">
+    <h2><span class="num">2</span> Phrasal verbs</h2>
+    <p class="hint">Впишите пропущенный предлог или глагол в нужной форме.</p>
+
+    <div class="q" data-answer="out">
+      <div class="prompt">1. Watch this video to find <b>___</b> more about how the service works.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="turn">
+      <div class="prompt">2. The easiest way to <b>___</b> off your PC is by pushing its physical power button.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="down">
+      <div class="prompt">3. The robot's sensors broke <b>___</b>, leading to a malfunction in its navigation system.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="put">
+      <div class="prompt">4. Could you <b>___</b> me through to the R&D department, please?</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="off">
+      <div class="prompt">5. The automatic safety system will cut <b>___</b> the gas supply if it detects a leak.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="come">
+      <div class="prompt">6. It is difficult to <b>___</b> up with a totally new idea nowadays.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="turn">
+      <div class="prompt">7. Water will not <b>___</b> into ice when you pour it on top of an ice cube.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="out">
+      <div class="prompt">8. ISS experiment will help scientists work <b>___</b> how to keep astronauts cool in space.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="carry">
+      <div class="prompt">9. Scientists <b>___</b> out plenty of experiments to test their hypotheses.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="in">
+      <div class="prompt">10. In order to make the Internet connection more stable, you need to plug <b>___</b> the Ethernet cable.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+  </section>
+
+  <!-- ================= TRANSLATION PHRASAL ================= -->
+  <section class="card" id="sec-trans-phrasal">
+    <h2><span class="num">3</span> Translate (Phrasal Verbs)</h2>
+    <p class="hint">Впишите правильную форму фразового глагола на английском.</p>
+
+    <div class="q" data-answer="cut off">
+      <div class="prompt">1. Huawei's access to US components and technology was <b>___</b> (<i>отключен</i>) in 2019.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="turn off">
+      <div class="prompt">2. Don't forget to <b>___</b> (<i>выключить</i>) the lights when you leave.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="break down">
+      <div class="prompt">3. Firefighters had to <b>___</b> (<i>сломать</i>) the door to get into the flat.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="put you through">
+      <div class="prompt">4. I'll <b>___</b> (<i>соединю вас</i>) to the manager.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="come up">
+      <div class="prompt">5. You don't have to be a deep thinker to <b>___</b> (<i>предложить</i>) with new ideas.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="carried out">
+      <div class="prompt">6. We <b>___</b> (<i>провели</i>) a series of experiments to test the theory.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="found out">
+      <div class="prompt">7. Researchers <b>___</b> (<i>выяснили</i>) that the Milky Way wasn't the only galaxy in the cosmos.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="turned into">
+      <div class="prompt">8. The monkey went on developing for close upon 5,000,000 years, and then <b>___</b> (<i>превратилась в</i>) a man.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="work out">
+      <div class="prompt">9. Before taking action try to <b>___</b> (<i>разобраться</i>) what the problem is.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="plug in">
+      <div class="prompt">10. Charging an electric car is like charging a mobile phone – <b>___</b> (<i>подключи к сети</i>) overnight.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+  </section>
+
+  <!-- ================= PREPOSITIONS ================= -->
+  <section class="card" id="sec-preps">
+    <h2><span class="num">4</span> Fill in prepositions</h2>
+    <p class="hint">Впишите предлог (или напишите "x", если предлог не нужен).</p>
+
+    <div class="q" data-answer="in">
+      <div class="prompt">1. <b>___</b> the beginning, God created the heaven and the earth.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="at">
+      <div class="prompt">2. Extra information can be found <b>___</b> the bottom of the page.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="to">
+      <div class="prompt">3. We had to explain <b>___</b> everyone what to do in an emergency.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="on">
+      <div class="prompt">4. <b>___</b> average, women live five years longer than men.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="on / into">
+      <div class="prompt">5. Mr Bexley is doing research <b>___</b> early Christian art. <i>(напишите через слэш: on / into)</i></div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="x">
+      <div class="prompt">6. It's time to face <b>___</b> the facts and save our planet. <i>(если предлог не нужен, напишите x)</i></div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="to">
+      <div class="prompt">7. There are plenty of exciting scientific developments to look forward <b>___</b>.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="in">
+      <div class="prompt">8. Edwin Hubble's observations of Andromeda resulted <b>___</b> some discoveries.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="as">
+      <div class="prompt">9. Thiamin, also known <b>___</b> vitamin B1, helps to keep the nervous system healthy.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="at">
+      <div class="prompt">10. The funds are awarded to help researchers <b>___</b> the beginning of their careers.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="to">
+      <div class="prompt">11. The research team came <b>___</b> the conclusion that Homo sapiens appeared around 300,000 years ago.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="in">
+      <div class="prompt">12. Most inventions are created as solutions to current demands, but <b>___</b> fact the opposite is often true.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="of">
+      <div class="prompt">13. Virtual reality (VR) is a useful tool in finding the cause <b>___</b> fires and how they spread.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="of">
+      <div class="prompt">14. Renewable energy sources like solar and wind power are the result <b>___</b> innovative green technologies.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="in">
+      <div class="prompt">15. This experimental installation was made <b>___</b> an attempt to explore the myth of Atlantis.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="in">
+      <div class="prompt">16. <b>___</b> conclusion, the discovery of antibiotics marked a major milestone in medical science.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="out">
+      <div class="prompt">17. With the advancement of AI, computers can now carry <b>___</b> experiments through simulations.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="of">
+      <div class="prompt">18. As a matter <b>___</b> fact, the International Space Station already has a robot assistant.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="from">
+      <div class="prompt">19. The Chernobyl nuclear disaster was a catastrophic event resulting <b>___</b> a series of safety failures.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="x">
+      <div class="prompt">20. Paleontologists have reached <b>___</b> the conclusion that dinosaurs roamed the Earth millions of years ago. <i>(если предлог не нужен, напишите x)</i></div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+  </section>
+
+  <!-- ================= TRANSLATION COLLOCATIONS ================= -->
+  <section class="card" id="sec-trans-colloc">
+    <h2><span class="num">5</span> Translate (Collocations)</h2>
+    <p class="hint">Впишите пропущенные слова на английском (целиком фразу).</p>
+
+    <div class="q" data-answer="make">
+      <div class="prompt">1. Today there are plenty of ways you can <b>___</b> (<i>позвонить</i>) a phone call without a SIM card.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="take">
+      <div class="prompt">2. Drones are widely used to <b>___</b> (<i>делать</i>) photos of unreachable areas.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="find">
+      <div class="prompt">3. 64% of smartphone users <b>___</b> (<i>считают</i>) it impossible to imagine a life without them.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="in the beginning">
+      <div class="prompt">4. <b>___</b> (<i>Сначала</i>), the internet was a small network connecting a few research institutions.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="cause">
+      <div class="prompt">5. A laboratory-associated incident was the most likely <b>___</b> (<i>причина</i>) of COVID-19.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="in conclusion">
+      <div class="prompt">6. <b>___</b> (<i>В заключение</i>), I would like to thank you all for your hard work.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="made">
+      <div class="prompt">7. They have recently <b>___</b> (<i>сделали</i>) some attempts to photograph the Moon but with little success.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="in fact / as a matter of fact">
+      <div class="prompt">8. <b>___</b> (<i>Фактически</i>), digital technologies, such as AI, could accelerate climate change. <i>(можно ввести любой из вариантов)</i></div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="managed">
+      <div class="prompt">9. In 2019, a new AI <b>___</b> (<i>смог</i>) to predict a scientific discovery before it happened.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="at the beginning">
+      <div class="prompt">10. Technology <b>___</b> (<i>в начале</i>) of the 20th century was vastly different from what we have today.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="intends">
+      <div class="prompt">11. Microsoft <b>___</b> (<i>намеревается</i>) to launch a gaming app store for iPhone and Android smartphones.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="on average">
+      <div class="prompt">12. <b>___</b> (<i>В среднем</i>), people who don't smoke are healthier than people who do.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="wondered">
+      <div class="prompt">13. Since humans first looked to the cosmos, they have <b>___</b> (<i>интересовались</i>) if life exists elsewhere in the universe.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="resulted in">
+      <div class="prompt">14. The invention of the printing press <b>___</b> (<i>привело к</i>) a greatly increased literacy rate throughout the world.</div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="reached the conclusion / come to the conclusion">
+      <div class="prompt">15. Climate scientists have <b>___</b> (<i>пришли к выводу</i>) that global temperatures are rising due to human activities. <i>(любой из вариантов)</i></div>
+      <input type="text" class="wide" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+  </section>
+
+  <!-- ================= ONE WORD BOTH SENTENCES ================= -->
+  <section class="card" id="sec-oneword">
+    <h2><span class="num">6</span> One word for both</h2>
+    <p class="hint">Впишите одно слово, которое подходит для обоих предложений.</p>
+
+    <div class="q" data-answer="fact">
+      <div class="prompt">1. In <b>___</b>, the Earth revolves around the Sun, not the other way around.<br>As a matter of <b>___</b>, the weather forecast was wrong again.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="made">
+      <div class="prompt">2. He <b>___</b> an attempt to break the Guinness World Record in front of the live audience.<br>A Vodafone engineer, José Guevara, is the first person who <b>___</b> a space-based 5G internet voice call.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="beginning">
+      <div class="prompt">3. I enjoyed the course in the <b>___</b>, but I'm bored with it now.<br>There are no tools that completely automate software development from <b>___</b> to end.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="looking">
+      <div class="prompt">4. You are <b>___</b> for the cause in the wrong place.<br>Is there anything great happening that you are <b>___</b> forward to?</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="cause">
+      <div class="prompt">5. The police are still trying to establish the <b>___</b> of the fire.<br>Adding salt to water can <b>___</b> it to boil at a higher temperature.</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+  </section>
+
+  <!-- ================= WORD FORMATION ================= -->
+  <section class="card" id="sec-formation">
+    <h2><span class="num">7</span> Word formation</h2>
+    <p class="hint">Измените форму слова из скобок и впишите его.</p>
+
+    <div class="q" data-answer="appearance">
+      <div class="prompt">1. Social bots are designed to resemble the <b>___</b> of human users. [APPEAR]</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="explanation">
+      <div class="prompt">2. What is the most likely <b>___</b> for the origin of life? [EXPLAIN]</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="revolutionary">
+      <div class="prompt">3. <b>___</b> change does not happen overnight. [REVOLUTION]</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="inventors">
+      <div class="prompt">4. Thomas Edison was one of the most famous and prolific <b>___</b> of all time. [INVENT]</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="technological">
+      <div class="prompt">5. <b>___</b> literacy is essential to adapt to today's fast-changing world. [TECHNOLOGY]</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="unimportant">
+      <div class="prompt">6. There's no point in arguing over something so <b>___</b>. [IMPORTANT]</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="intention">
+      <div class="prompt">7. Innovations in technology are driven by the <b>___</b> to make our lives easier and more efficient. [INTEND]</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="observer">
+      <div class="prompt">8. The <b>___</b> has the only function of registering processes in space and time. [OBSERVE]</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="possibly">
+      <div class="prompt">9. The new software update will <b>___</b> improve the performance of your smartphone. [POSSIBLE]</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="invention">
+      <div class="prompt">10. Antibiotics is the second most important public health <b>___</b> of the last century. [INVENT]</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="psychological">
+      <div class="prompt">11. Wearable devices can monitor various <b>___</b> indicators, such as stress levels. [PSYCHOLOGY]</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="importance">
+      <div class="prompt">12. We should teach the next generation the <b>___</b> of protecting our planet for future. [IMPORTANT]</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="introduction">
+      <div class="prompt">13. The <b>___</b> of 3D printing technology has revolutionized manufacturing processes. [INTRODUCE]</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="observation">
+      <div class="prompt">14. The James Webb Space Telescope is ushering in a new era of space <b>___</b>. [OBSERVE]</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="possibility">
+      <div class="prompt">15. Using CRISPR technology has opened up the <b>___</b> of editing genes and treating genetic diseases. [POSSIBLE]</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="scientific discoveries">
+      <div class="prompt">16. AI is speeding up <b>___</b> <b>___</b> and helping to spot new ideas. [SCIENCE; DISCOVER] <i>(введите два слова)</i></div>
+      <input type="text" class="wide" placeholder="слово 1">
+      <input type="text" class="wide" placeholder="слово 2">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="researchers">
+      <div class="prompt">17. American <b>___</b> suggest that humans will need to create very Earth-like conditions to survive for long periods in space. [RESEARCH]</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="psychologists">
+      <div class="prompt">18. <b>___</b> are at the forefront of studying the impact of screen time and digital devices on cognitive development in children. [PSYCHOLOGY]</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="impossible">
+      <div class="prompt">19. It was once thought <b>___</b> to travel faster than the speed of sound, but supersonic jets have made it a reality. [POSSIBLE]</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="scientists">
+      <div class="prompt">20. Hundreds of <b>___</b> from around the world have received Nobel Prizes for their groundbreaking achievements. [SCIENCE]</div>
+      <input type="text" placeholder="ваш ответ">
+      <div class="feedback"></div>
+    </div>
+  </section>
+
+  <div class="btn-row" style="margin-bottom: 40px;">
+    <button class="btn-primary" id="checkBtn">Проверить всё</button>
+    <button class="btn-ghost" id="resetBtn">Сбросить</button>
+  </div>
+
+</main>
+
+<div class="score" id="scoreBar">
+  <div>
+    <span>Результат: </span>
+    <span class="val" id="scoreVal">—</span>
+    <span id="scoreMsg" class="msg"></span>
+  </div>
+</div>
+
+<script>
+(function(){
+  var $ = function(s, r) { return (r || document).querySelector(s); };
+  var $$ = function(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+
+  function norm(s){
+    if (!s) return '';
+    return s.toString().toLowerCase()
+      .replace(/-/g, ' ')       // дефисы на пробелы
+      .replace(/\s+/g, ' ')     // лишние пробелы
+      .trim();
+  }
+
+  var mistakeCounts = new WeakMap();
+
+  function getMistakes(el) { return mistakeCounts.get(el) || 0; }
+  function incMistakes(el) {
+    var n = getMistakes(el) + 1;
+    mistakeCounts.set(el, n);
+    return n;
+  }
+
+  function setFeedback(fbEl, ok, correctText, mistakes) {
+    fbEl.classList.remove('ok', 'bad');
+    if(ok) {
+      fbEl.textContent = 'Верно';
+      fbEl.classList.add('ok');
+      return;
+    }
+    if(mistakes >= 3) {
+      fbEl.textContent = 'Неверно. Правильный ответ: ' + correctText;
+    } else {
+      var left = 3 - mistakes;
+      fbEl.textContent = 'Неверно. Попробуйте ещё раз (до подсказки осталось: ' + left + ').';
+    }
+    fbEl.classList.add('bad');
+  }
+
+  function checkQuestion(qEl) {
+    var answerStr = qEl.getAttribute('data-answer'); 
+    var inputs = qEl.querySelectorAll('input[type=text]');
+    var fb = qEl.querySelector('.feedback');
+    
+    var ok = true;
+    var displayAnswer = answerStr.replace(/\//g, ' ИЛИ ').replace(/ \| /g, ' / ');
+
+    // Если у нас два поля ввода (например, SCIENTIFIC DISCOVERIES)
+    if (inputs.length > 1 && answerStr.indexOf(' ') > -1 && answerStr.indexOf('/') === -1) {
+        var parts = answerStr.split(' ');
+        if (parts.length === inputs.length) {
+            for (var i=0; i<inputs.length; i++) {
+                if (norm(inputs[i].value) !== norm(parts[i])) ok = false;
+            }
+        } else {
+            ok = false;
+        }
+    } else {
+        // Обычная проверка (одно поле, но может быть несколько вариантов ответа)
+        if (!inputs[0].value.trim()) {
+            fb.classList.remove('ok', 'bad');
+            fb.textContent = 'Нет ответа';
+            fb.classList.add('bad');
+            return false;
+        }
+        var userVal = norm(inputs[0].value);
+        ok = false;
+        var variants = answerStr.split('/');
+        for(var i=0; i<variants.length; i++) {
+            if (userVal === norm(variants[i])) {
+                ok = true;
+                break;
+            }
+        }
+    }
+
+    var mistakes = ok ? getMistakes(qEl) : incMistakes(qEl);
+    setFeedback(fb, ok, displayAnswer, mistakes);
+    return ok;
+  }
+
+  function checkAll() {
+    var total = 0, correct = 0;
+    $$('.q').forEach(function(q) {
+      total++;
+      if(checkQuestion(q)) correct++;
+    });
+
+    var val = $('#scoreVal');
+    var msg = $('#scoreMsg');
+    val.textContent = correct + ' / ' + total;
+    val.classList.remove('ok', 'bad');
+
+    var pct = total ? Math.round(correct / total * 100) : 0;
+    if(pct === 100){
+      val.classList.add('ok');
+      msg.textContent = 'Идеально! Всё верно!';
+    } else if(pct >= 70){
+      val.classList.add('ok');
+      msg.textContent = '(' + pct + '%) Хороший результат, но есть над чем поработать.';
+    } else {
+      val.classList.add('bad');
+      msg.textContent = '(' + pct + '%) Ошибок много. Повторите материал!';
+    }
+  }
+
+  function resetAll() {
+    $$('input[type=text]').forEach(function(i) { i.value = ''; });
+    $$('.feedback').forEach(function(f) {
+      f.textContent = '';
+      f.classList.remove('ok', 'bad');
+    });
+    $$('.q').forEach(function(el) { mistakeCounts.delete(el); });
+    var val = $('#scoreVal');
+    val.textContent = '—';
+    val.classList.remove('ok', 'bad');
+    $('#scoreMsg').textContent = '';
+  }
+
+  $('#checkBtn').addEventListener('click', checkAll);
+  $('#resetBtn').addEventListener('click', resetAll);
+
+  $$('input[type=text]').forEach(function(inp) {
+    inp.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') { e.preventDefault(); checkAll(); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
